@@ -6,7 +6,8 @@ public class HolaMundo {
         
         int numero = 10;
         System.out.println("numero = " + numero);
-        if (num)
+
+        var numero2 = "15"; //con var se indica un tipo flexible de variable dado por el tipo de dato que contenga.
     }
 }
 
