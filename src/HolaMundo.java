@@ -7,7 +7,16 @@ public class HolaMundo {
         int numero = 10;
         System.out.println("numero = " + numero);
 
-        var numero2 = "15"; //con var se indica un tipo flexible de variable dado por el tipo de dato que contenga.
+        var numero2 = (int)((Math.random()*15)+1); //con var se indica un tipo flexible de variable dado por el tipo de dato que contenga.
+        System.out.println("numero2 = " + numero2);
+        
+        if(numero2 > 10){
+            saludar = "hola desde if ";
+
+        }else{
+            saludar ="hola desde else";
+        }
+        System.out.println(saludar);
     }
 }
 
