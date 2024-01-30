@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SistemasNumericosScanner {
@@ -6,14 +7,14 @@ public class SistemasNumericosScanner {
 
         Scanner scanner = new Scanner(System.in);//creando instancia clase scanner
         System.out.println("Ingrese un numero");
-        String numeroString = scanner.nextLine(); //nextLine para obtener la linea del terminal que el usuario ingresó
+        //String numeroString = scanner.nextLine(); nextLine para obtener la linea del terminal que el usuario ingresó
 
         int numeroDecimal;
 
         try {
-            numeroDecimal = Integer.parseInt(numeroString);
+            numeroDecimal = scanner.nextInt();//para escanear un nro entero
 
-        } catch (NumberFormatException e){
+        } catch (InputMismatchException e){
             System.out.println("Error, debe ingresar un número entero");
             main(args);
             return;
