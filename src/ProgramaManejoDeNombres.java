@@ -54,7 +54,6 @@ public class ProgramaManejoDeNombres {
 
         System.out.println(resultado);
 
-
     }
 }
          */
