@@ -53,7 +53,6 @@ public class ProgramaManejoDeNombres {
         String resultado = nombreA2 + "_" + nombreB2 + "_" + nombreC2;
 
         System.out.println(resultado);
-
     }
 }
          */
