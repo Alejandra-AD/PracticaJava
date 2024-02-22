@@ -22,7 +22,6 @@ public class loginSimplePracticaBooleanos {
             System.out.println("usuario o contraseña incorrectos");
         }
 
-
         
     }
 }
