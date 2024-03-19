@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loginSimplePracticaBooleanos {
+public class LoginSimplePracticaBooleanos {
     public static void main(String[] args) {
 
         String user = "Alejandra", pass = "martini123";
