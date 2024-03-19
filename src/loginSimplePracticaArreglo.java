@@ -6,13 +6,16 @@ public class loginSimplePracticaArreglo {
 
 
         String[] usuarios = new String[2];
+        String[] passwords = new String[2];
+
+        usuarios [0] = "Tulio";
+        passwords[0] = "12345";
+        usuarios [1] = "Juanin";
+        passwords[1] = "12345";
+
+        boolean isAuth = false;
+
         Scanner scanner = new Scanner(System.in);
-
-        String user1 = "Alejandra";
-        String pass1 = "12345";
-
-        String user2 = "Carolina";
-        String pass2 = "12345";
 
         System.out.println("Ingrese usuario:");
         String u = scanner.nextLine();
@@ -22,6 +25,20 @@ public class loginSimplePracticaArreglo {
 
         System.out.println("u = " + u);
         System.out.println("p = " + p);
+
+
+        for( int i = 0; i<usuarios.length ; i++ ){
+
+            if(usuarios[i].equals(u)&&passwords[i].equals(p)){
+                isAuth = true;
+                break;
+            }
+        }
+
+        if (isAuth){
+            System.out.println("Usuario autenticado ✔️...");
+            System.out.println("Hola ".concat(u).concat("!"));
+        }
 
 
 
