@@ -5,13 +5,16 @@ public class loginSimplePracticaArreglo {
     public static void main(String[] args) {
 
 
-        String[] usuarios = new String[2];
+        /*String[] usuarios = new String[2];
         String[] passwords = new String[2];
 
         usuarios [0] = "Tulio";
         passwords[0] = "12345";
         usuarios [1] = "Juanin";
-        passwords[1] = "12345";
+        passwords[1] = "12345";*/
+
+        String[] usuarios = {"Tulio", "Juanin", "Alejandra"};
+        String[] passwords = {"123", "1234", "12345"};
 
         boolean isAuth = false;
 
