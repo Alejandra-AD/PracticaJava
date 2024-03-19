@@ -13,8 +13,9 @@ public class OperadorTernarioNumeroMayor {
 
         System.out.println("Ingrese el tercer número");
         int num3 = scanNumero.nextInt();
-        
-        int numMayor = (num1 > num2)? num1:num2;
+
+        int numMayor = 0;
+        numMayor = (num1 > num2)? num1:num2;
         numMayor = (numMayor>num3)? numMayor:num3;
 
         System.out.println("numMayor = " + numMayor);
