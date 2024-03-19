@@ -38,6 +38,8 @@ public class loginSimplePracticaArreglo {
         if (isAuth){
             System.out.println("Usuario autenticado ✔️...");
             System.out.println("Hola ".concat(u).concat("!"));
+        }else{
+            System.out.println("Usuario no autenticado... Nombre de usuario o contraseña incorrectos");
         }
 
 
