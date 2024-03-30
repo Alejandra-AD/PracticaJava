@@ -7,7 +7,7 @@ public class BuscadorPalabraTexto {
         Scanner scanPalabra = new Scanner(System.in);*/
         
         String texto = "tres tristes tigres tragaban trigo en un trigal";
-        String palabra = "trigo";
+        String palabra = "tri";
         char letra = 't';
      /*   String palabra = scanPalabra.nextLine();*/
         int maxTexto = texto.length();
@@ -15,17 +15,26 @@ public class BuscadorPalabraTexto {
 
         int contador = 0;
 
-
+        buscar:
         for(int i = 0 ; i < maxTexto ; i++ ){
-            for (int j = 0 ; j < maxPalabra;j++){
-                if (texto.charAt(i) != letra){
-                    continue;
+            int k = i;
+            for (int j = 0 ; j < maxPalabra ; j++){
+                if (texto.charAt(k++) != palabra.charAt(j)){
+                    continue buscar;
                 }
-                contador ++;
+
             }
+            contador ++;
+        }
+        if (contador == 0){
+            System.out.println("La palabra " + palabra + " no se encuentra en el texto");
+        }else if (contador != 1 && contador > 0){
+
+            System.out.println("Se ha encontrado la palabra " + palabra + " " + contador + " veces");
+        }else{
+            System.out.println("Se ha encontrado la palabra " + palabra + " " + contador + " vez");
         }
 
-        System.out.println(contador);
         
     }
 }
