@@ -35,6 +35,7 @@ public class BuscadorPalabraTexto {
             System.out.println("Se ha encontrado la palabra " + palabra + " " + contador + " vez");
         }
 
+
         
     }
 }
